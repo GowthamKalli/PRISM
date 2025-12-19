@@ -1,0 +1,6 @@
+from services.tracking_adapter import get_tracking_context
+
+print(get_tracking_context("AB123"))   # DELIVERED
+print(get_tracking_context("CD456"))   # OUT_FOR_DELIVERY
+print(get_tracking_context("EF789"))   # IN_TRANSIT / DELAYED
+print(get_tracking_context("NEW999"))  # auto-created
